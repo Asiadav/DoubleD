@@ -1,0 +1,36 @@
+Terminology:
+-Origin/Master: a remote copy of the master branch
+-Master: a local branch where the most current changes are stored
+-Remote: the cloud folder service (github)
+-Origin: a remote
+-Branch: a folder where differing or older changes from the master are stored 
+-Repository: Local files taken from the cloud files
+
+
+Commands:
+
+//resets local files with cloud files
+git reset --hard origin/master
+
+//pulls file from cloud
+git pull
+
+//change directory
+cd <file location>
+
+//officially add file to repository
+git add <file name> 
+// add all
+git add -A
+
+//committing a file to repository to prepare for a push
+git commit -m "<comment on file(s) commited>"
+
+//copy local files to update cloud files
+git push
+
+//take all files from cloud and store them locally
+git pull
+
+//check chamge log of repository
+git status
